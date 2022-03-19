@@ -9,7 +9,15 @@ body
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Fredoka', sans-serif;
 }
-
+#nameTag{
+    color: white;
+    font-size: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
 button
 {
    box-sizing: border-box;
@@ -119,10 +127,6 @@ img
     font-size: 21px;
 }
 
-#movie
-{
-    
-}
 
 #weather
 {
@@ -133,10 +137,6 @@ img
 #wedTemp
 {
     font-size: 21px;
-}
-#wedCity
-{
-
 }
 
 

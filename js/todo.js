@@ -22,13 +22,13 @@ function paintToDo(newToDo)
 {
     const li = document.createElement("li");
     li.id = newToDo.id;
-    const span = document.createElement("span");
-    span.innerText = newToDo.text;
     const button = document.createElement("button");
     button.innerText = " ";
+    const span = document.createElement("span");
+    span.innerText = newToDo.text;
     button.addEventListener("click", deleteToDo);
-    li.appendChild(span);
     li.appendChild(button);
+    li.appendChild(span);
     toDoList.appendChild(li);
 }
 
@@ -50,7 +50,6 @@ toDoForm.addEventListener("submit", handleTodoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
-console.log(savedToDos);
 if(savedToDos !== null)
 {
     const parsedToDos = JSON.parse(savedToDos);
